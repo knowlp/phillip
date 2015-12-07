@@ -10,8 +10,8 @@ OBJS_BIN = $(SRCS_BIN:.cpp=.o)
 OBJS_LIB = $(SRCS_LIB:.cpp=.lo)
 
 OPTS = -O2 -std=c++11 -DNDEBUG
-IDFLAGS =
-LDFLAGS =
+IDFLAGS = -pthread
+LDFLAGS = -pthread
 LDFLAGS+=-L/home/ps/_setup/lp_solve_5.5/lpsolve55/bin/ux64/
 IDFLAGS += -I/usr/include/python2.7 -I/home/ps/_setup/lp_solve_5.5
 
