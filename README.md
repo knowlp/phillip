@@ -16,7 +16,8 @@ Phillip is the first-ordered abductive reasoner for natural language processing 
 2. Move to the directory where Phillip is installed.
 2. Execute `python tools/configure.py`. Then makefile will be created.
 3. Configure environment variables:  
-    - If you use LP-Solve, add the path of the header directory of LP-Solve to `CPLUS_INCLUDE_PATH`.
+    - If you use LP-Solve, add the path of the header directory of LP-Solve to `CPLUS_INCLUDE_PATH` or `IDFLAGS` as `-I<path>`.
+    - If you use a nonstandard Python header location, add the corresponding `-I<path>` directives to `IDFLAGS`.
     - If you use Gurobi optimizer, add the path of directory of Gurobi to `GUROBI_HOME`, `$GUROBI_HOME/include` to `CPLUS_INCLUDE_PATH` and `$GUROBI_HOME/lib` to `LIBRARY_PATH` and `LD_LIBRARY_PATH`.
 4. Execute `make`.
 5. (Optional) Execute `make test`.
