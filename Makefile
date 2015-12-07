@@ -12,6 +12,8 @@ OBJS_LIB = $(SRCS_LIB:.cpp=.lo)
 OPTS = -O2 -std=c++11 -DNDEBUG
 IDFLAGS =
 LDFLAGS =
+LDFLAGS+=-L/home/ps/_setup/lp_solve_5.5/lpsolve55/bin/ux64/
+IDFLAGS += -I/usr/include/python2.7 -I/home/ps/_setup/lp_solve_5.5
 
 # USE-LP-SOLVE
 OPTS += -DUSE_LP_SOLVE
